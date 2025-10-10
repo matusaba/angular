@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { HeaderComponent } from '../header/header';
 import { RouterOutlet } from '@angular/router';
 import { Quests } from './quests/quests';
@@ -10,4 +10,11 @@ import { Quests } from './quests/quests';
   templateUrl: './app.html', 
   styleUrls: ['./app.css']
 })
-export class AppComponent {}
+
+  export class AppComponent {
+    showQuests: boolean = true;
+  
+    toggle(): void {
+      this.showQuests = !this.showQuests;
+    }
+  }
