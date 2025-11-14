@@ -1,20 +1,15 @@
-import { Component, signal } from '@angular/core';
-import { HeaderComponent } from '../header/header';
-import { RouterOutlet } from '@angular/router';
-import { Quests } from './quests/quests';
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [HeaderComponent, Quests, RouterOutlet], 
-  templateUrl: './app.html', 
+  imports: [CommonModule, RouterModule],
+  templateUrl: './app.html',
   styleUrls: ['./app.css']
 })
-
-  export class AppComponent {
-    showQuests: boolean = true;
+export class App {
   
-    toggle(): void {
-      this.showQuests = !this.showQuests;
-    }
-  }
+  header_logo = 'assets/my-header.jpg';
+}

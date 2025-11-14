@@ -1,0 +1,10 @@
+.home {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.home img {
+  width: 70%;
+  border-radius: 12px;
+  margin-top: 20px;
+}

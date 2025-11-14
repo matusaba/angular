@@ -1,11 +1,15 @@
 <main>
-    <app-header></app-header>
-
-    <router-outlet></router-outlet>
-    <button (click)="toggle()"> Toggle Quests </button>
-        @if (showQuests){
-            <app-quests></app-quests>
-        }
- 
+  <header>
+    <img src="https://questbar.sk/img/logo.png" alt="logo" height="300px" width="600px">
     
+  </header>
+
+  <nav>
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+    <a routerLink="/quests" routerLinkActive="active">Quests</a>
+    <a routerLink="/clans" routerLinkActive="active">Clans</a>
+    <a routerLink="/players" routerLinkActive="active">Players</a>
+  </nav>
+
+  <router-outlet></router-outlet>
 </main>

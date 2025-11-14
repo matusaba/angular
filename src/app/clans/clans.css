@@ -1,0 +1,8 @@
+.clan-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.clan-info { flex: 1; text-align: left; }
+.clan-actions button { background: crimson; color: white; border: none; padding: 6px 10px; border-radius: 6px; }

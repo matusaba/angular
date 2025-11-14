@@ -1,12 +1,36 @@
-:host {
-  --content-padding: 10px;
+.brand-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
 }
+
+.brand-logo {
+  height: 10px;
+  width: 10px;
+  border-radius: 8px;
+}
+
 header {
-  display: block;
-  height: 60px;
-  padding: var(--content-padding);
-  box-shadow: 0px 5px 25px var(--shadow-color);
+ 
+  text-align: center;
+  padding: 15px;
 }
-.content {
-  padding: var(--content-padding);
+
+nav {
+  display: flex;
+  gap: 150px;
+  justify-content: center;
+  background-color: #db470c;
+  padding: 50px;
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a.active {
+  text-decoration: underline;
 }
